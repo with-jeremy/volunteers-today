@@ -1,31 +1,32 @@
-
 <template>
   <div class="min-h-screen flex items-center justify-center bg-gray-100">
-    <Card>
-      <h2 class="text-2xl font-bold mb-4">Sign Up</h2>
-      <FormInput
-        id="email"
-        label="Email"
-        type="email"
-        v-model="email"
-        :error="emailError"
-      />
-      <FormInput
-        id="password"
-        label="Password"
-        type="password"
-        v-model="password"
-        :error="passwordError"
-      />
-      <FormInput
-        id="confirmPassword"
-        label="Confirm Password"
-        type="password"
-        v-model="confirmPassword"
-        :error="confirmPasswordError"
-      />
-      <Button variant="primary" @click="handleSignup">Sign Up</Button>
-    </Card>
+    <div class="glass-panel">
+      <Card>
+        <h2 class="text-2xl font-bold mb-4">Sign Up</h2>
+        <FormInput
+          id="email"
+          label="Email"
+          type="email"
+          v-model="email"
+          :error="emailError"
+        />
+        <FormInput
+          id="password"
+          label="Password"
+          type="password"
+          v-model="password"
+          :error="passwordError"
+        />
+        <FormInput
+          id="confirmPassword"
+          label="Confirm Password"
+          type="password"
+          v-model="confirmPassword"
+          :error="confirmPasswordError"
+        />
+        <Button variant="primary" @click="handleSignup">Sign Up</Button>
+      </Card>
+    </div>
   </div>
 </template>
 

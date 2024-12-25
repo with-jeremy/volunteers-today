@@ -8,9 +8,6 @@ export default defineNuxtConfig({
     cssPath: '~/assets/css/tailwind.css',
     exposeConfig: false,
     config: {
-      theme: {
-        extend: {},
-      },
       plugins: ['daisyui'],
     },
   },

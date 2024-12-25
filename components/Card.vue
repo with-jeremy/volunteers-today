@@ -1,6 +1,5 @@
-
 <template>
-  <div class="bg-white rounded-lg shadow-md p-4 transition-transform hover:scale-105">
+  <div class="card glass-panel">
     <slot />
   </div>
 </template>
@@ -11,4 +10,5 @@
 
 <style scoped>
 /* Add any component-specific styles here */
+/* Additional glass-panel styles are handled via the .glass-panel class */
 </style>

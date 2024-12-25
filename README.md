@@ -19,11 +19,11 @@ This project is a Nuxt 3 SaaS volunteer coordinator app.
 - **Accessibility:** Ensure all components meet WCAG 2.1 AA standards with proper contrast ratios, keyboard navigation, and ARIA attributes.
 - **Mobile-First:** Design components to be fully responsive and optimized for mobile devices first, then scale up for larger screens.
 - **Reusable Components:** Develop a library of reusable components (e.g., buttons, modals, cards) to maintain consistency and expedite development.
-  - **Buttons:** Standardize button styles, sizes, and states (hover, active, disabled).
-  - **Modals:** Create accessible modal dialogs with focus trapping and keyboard navigation.
-  - **Cards:** Design versatile card components for displaying information consistently.
-  - **Forms:** Develop input fields, checkboxes, radio buttons, and dropdowns with uniform styling.
-  - **Navigation:** Implement navigation bars, sidebars, and breadcrumbs with clear active states.
+  - **Buttons:** Standardize button styles, sizes, and states (hover, active, disabled) using DaisyUI's `btn` classes.
+  - **Modals:** Create accessible modal dialogs with DaisyUI's `modal` classes, including focus trapping and keyboard navigation.
+  - **Cards:** Design versatile card components with DaisyUI's `card` classes and incorporate glassmorphic effects.
+  - **Forms:** Develop input fields, checkboxes, radio buttons, and dropdowns with DaisyUI's form classes for uniform styling.
+  - **Navigation:** Implement navigation bars, sidebars, and breadcrumbs with clear active states using DaisyUI's navigation components.
 - **Design Principles:**
   - **Consistency:** Maintain uniform styling across all components.
   - **Simplicity:** Keep the UI intuitive and uncluttered.
@@ -43,6 +43,7 @@ This project is a Nuxt 3 SaaS volunteer coordinator app.
 
 ## Notes & Preferences
 - Bold, sleek UI with clear animations for user flow.
+- Utilize DaisyUI for consistent component styling.
 - Document all choices here for future collaboration.
 
 ## Setup

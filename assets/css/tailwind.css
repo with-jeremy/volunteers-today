@@ -1,6 +1,19 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* ...existing styles... */
+
+/* Mobile-First Base Styles */
+body {
+  @apply bg-neumorphic-bg text-gray-800;
+}
+
+button {
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+/* Glassmorphic Panels */
+.glass-panel {
+  @apply bg-glass-bg backdrop-blur-glass shadow-neumorphic rounded-lg p-4;
+}

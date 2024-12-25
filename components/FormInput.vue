@@ -1,7 +1,8 @@
-
 <template>
-  <div class="mb-4">
-    <label :for="id" class="block text-gray-700 mb-2">{{ label }}</label>
+  <div class="form-control mb-4">
+    <label :for="id" class="label">
+      <span class="label-text">{{ label }}</span>
+    </label>
     <input
       :id="id"
       :type="type"
@@ -10,8 +11,9 @@
       @input="$emit('update:modelValue', $event.target.value)"
       :class="inputClasses"
       :aria-label="label"
+      class="input input-bordered"
     />
-    <p v-if="error" class="text-red-500 text-sm mt-1">{{ error }}</p>
+    <p v-if="error" class="text-error text-sm mt-1">{{ error }}</p>
   </div>
 </template>
 
@@ -44,9 +46,7 @@ const props = defineProps({
 })
 
 const inputClasses = computed(() => {
-  return `w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 ${
-    props.error ? 'border-red-500' : 'border-gray-300'
-  } transition`;
+  return `${props.error ? 'input-error' : 'input-primary'} transition`;
 })
 </script>
 
