@@ -1,11 +1,10 @@
-
 <template>
   <div class="min-h-screen bg-gray-100">
     <header class="p-4 bg-white shadow">
-      <h1 class="text-xl font-bold">Volunteers Today</h1>
+      <NavBar />
     </header>
     <main class="p-4">
-      <slot />
+      <NuxtPage />
     </main>
     <footer class="p-4 bg-white shadow mt-4">
       <p>&copy; 2024 Volunteers Today</p>
@@ -14,9 +13,10 @@
 </template>
 
 <script setup>
+import NavBar from '~/components/NavBar.vue'
 // ...existing script...
 </script>
 
 <style>
-// ...existing styles...
+/* ...existing styles... */
 </style>

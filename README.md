@@ -13,17 +13,33 @@ This project is a Nuxt 3 SaaS volunteer coordinator app.
 ## Design System
 - TailwindCSS + DaisyUI
 - Neumorphic components with glassmorphic panels and smooth transitions
-- Accessible, mobile-first approach
-- High contrast and unobtrusive animations
+- **Neumorphic Design:** Implement soft shadows and highlights to create a tactile, embossed look for UI elements.
+- **Glassmorphic Panels:** Use semi-transparent backgrounds with blur effects to achieve a frosted glass appearance.
+- **Animations:** Incorporate subtle animations and transitions to guide user interactions and indicate state changes.
+- **Accessibility:** Ensure all components meet WCAG 2.1 AA standards with proper contrast ratios, keyboard navigation, and ARIA attributes.
+- **Mobile-First:** Design components to be fully responsive and optimized for mobile devices first, then scale up for larger screens.
+- **Reusable Components:** Develop a library of reusable components (e.g., buttons, modals, cards) to maintain consistency and expedite development.
+  - **Buttons:** Standardize button styles, sizes, and states (hover, active, disabled).
+  - **Modals:** Create accessible modal dialogs with focus trapping and keyboard navigation.
+  - **Cards:** Design versatile card components for displaying information consistently.
+  - **Forms:** Develop input fields, checkboxes, radio buttons, and dropdowns with uniform styling.
+  - **Navigation:** Implement navigation bars, sidebars, and breadcrumbs with clear active states.
+- **Design Principles:**
+  - **Consistency:** Maintain uniform styling across all components.
+  - **Simplicity:** Keep the UI intuitive and uncluttered.
+  - **Feedback:** Provide immediate and clear feedback for user actions.
+  - **Scalability:** Ensure the design system can accommodate future components and features.
 
 ## Branch Tasks (In Order)
 1. Initialize repo & set up scaffolding (index, landing, auth placeholder, dashboard).
 2. Tailwind + DaisyUI integration.
-3. Create design system (shared components, styles).
-4. Add pages for “Coming Soon” features (Auth, Onboarding).
-5. Implement dashboard with modular widgets (drag, collapse, transitions, progress bars).
-6. Add guided tours/onboarding flows.
-7. Expand UI with volunteer “checkout” for opportunities.
+3. **Develop shared components (buttons, modals, cards, forms, navigation, etc.).**
+4. Create design system (shared components, styles).
+5. Add pages for “Coming Soon” features (Auth, Onboarding).
+6. **Begin developing Auth UI using shared components.**
+7. Implement dashboard with modular widgets (drag, collapse, transitions, progress bars).
+8. Add guided tours/onboarding flows.
+9. Expand UI with volunteer “checkout” for opportunities.
 
 ## Notes & Preferences
 - Bold, sleek UI with clear animations for user flow.
